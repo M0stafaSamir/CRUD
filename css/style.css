@@ -1,0 +1,44 @@
+* {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+:root {
+  --mainColor: #013f6f;
+}
+
+.navbar-brand {
+  color: var(--mainColor);
+  font-size: 24px;
+}
+
+header {
+  min-height: 25vh;
+  background-color: var(--mainColor);
+}
+
+.formContainer {
+  top: -90px;
+}
+main {
+  margin-top: -50px;
+}
+.btn-outline-primary {
+  border-color: var(--mainColor) !important;
+  color: var(--mainColor) !important;
+}
+.btn-outline-primary:hover {
+  background-color: var(--mainColor) !important;
+  color: white !important;
+}
+
+.productData {
+  background-color: var(--mainColor);
+}
+
+.fa-magnifying-glass {
+  left: 28px;
+}
+
+.description {
+  word-break: break-all;
+}
