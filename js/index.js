@@ -29,7 +29,6 @@ function addProduct() {
     validation(productPrice, "priceMsg") &&
     validation(productCount, "countMsg") &&
     validation(productDesc, "descMsg") &&
-    validation(productImage, "imgMsg") &&
     validation(productRating, "ratingMsg")
   ) {
     const product = {
@@ -53,6 +52,7 @@ function addProduct() {
   productCount.classList.remove("is-valid");
   productDesc.classList.remove("is-valid");
   productImage.classList.remove("is-valid");
+  productRating.classList.remove("is-valid");
 }
 
 function deleteProduct(i) {
@@ -79,7 +79,7 @@ function updateProduct() {
     validation(productPrice, "priceMsg") &&
     validation(productCount, "countMsg") &&
     validation(productDesc, "descMsg") &&
-    validation(productImage, "imgMsg")
+    validation(productRating, "ratingMsg")
   ) {
     const product = {
       title: productTitle.value,
@@ -105,6 +105,7 @@ function updateProduct() {
   productCount.classList.remove("is-valid");
   productDesc.classList.remove("is-valid");
   productImage.classList.remove("is-valid");
+  productRating.classList.remove("is-valid");
 }
 
 function displayAndSearchProduct(search) {
